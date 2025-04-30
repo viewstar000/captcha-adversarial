@@ -18,6 +18,8 @@ lib/
 lib64/
 parts/
 sdist/
+logs/
+tmp/
 var/
 wheels/
 share/python-wheels/
@@ -172,3 +174,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# others
+.DS_Store

@@ -1,0 +1,12 @@
+numpy
+jieba
+Pillow
+torch
+torchvision
+torchaudio
+accelerate
+transformers
+sentence_transformers
+cleverhans
+openai
+gradio

@@ -3,38 +3,38 @@ Captcha Adversarial
 
 [中文](README.md) | [English](README_en.md)
 
-采用面向对抗的设计思想的人机验证码实验项目，仅限于技术交流为目的。
+An experimental project of human-machine CAPTCHA based on adversarial design approach, ONLY for technical exchange.
 
-设计思路
+Design Philosophy
 -------------------
 
-[设计思路](docs/design.md)
+[Design Philosophy](docs/design_en.md)
 
-已实现的功能
+Implemented Features
 -------------------
 
-### 针对多模态语言模型生成对抗攻击样本
+### Generating Adversarial Attack Samples Against Multimodal Language Models
 
-实现的攻击算法包括Bert-Attack、BSA-Attack、VLAttack等，目标模型支持BLIP、Qwen2.5-VL等。
+Supported attack algorithms include Bert-Attack, BSA-Attack, VLAttack, etc., with target models supporting BLIP, Qwen2.5-VL, etc.
 
-使用方法：
+Usage Method:
 
 ```bash
-# 下载代码
+# Download the code
 git clone https://github.com/viewstar000/captcha-adversarial.git
 cd captcha-adversarial
-# 创建虚拟执行环境
+# Create a virtual execution environment
 virtualenv .venv
 source .venv/bin/activate
-# 安装依赖
+# Install dependencies
 pip install -r requirements.txt
-# 启动生成工具
+# Start the generation tool
 python -m captcha_adversarial.adv_attacks.apps.vlattack
 ```
 
-参考文献：
+References:
 
-| 方法          | 文献                                                                                                                         | 代码                                              |
+| Method        | Paper                                                                                                                        | Code                                              |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | Bert-Attack   | [BERT-ATTACK: Adversarial Attack Against BERT Using BERT](https://arxiv.org/abs/2004.09984)                                  | [LINK](https://github.com/LinyangLee/BERT-Attack) |
 | BSA, VLAttack | [VLATTACK: Multimodal Adversarial Attacks on Vision-Language Tasks via Pre-trained Models](https://arxiv.org/abs/2310.04655) | [LINK](https://github.com/ericyinyzy/VLAttack)    |
